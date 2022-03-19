@@ -1,0 +1,75 @@
+/* Body */
+#app {
+    background-color: #393E46;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    min-height: 100vh;
+}
+
+/* Header */
+.card-header {
+    background-color: #4ECCA3;
+}
+
+/* Button */
+.btn {
+    transition: .4s;
+}
+.btn:hover {
+    transform: scale(1.03);
+}
+.btn-secondary {
+    background-color: #232931 !important;
+    font-weight: bold;
+    letter-spacing: .1em;
+}
+table th, .btn-success {
+    background-color: #4ECCA3 !important;
+    color: black !important;
+}
+.btn-info {
+    background-color: rgb(100, 100, 100) !important;
+    color: white !important;
+    border: 1px solid #4ECCA3 !important;
+}
+
+/* Table */
+table td {
+    font-weight: 600 !important;
+    border: none !important;
+}
+
+/* Pagination */
+.page-item .page-link {
+    color: #4ECCA3;
+    border-radius: 3px;
+    margin: 0 3px; 
+} 
+.page-item.active .page-link {
+    background-color: #4ECCA3;
+    border-color: #4ECCA3; 
+}
+.page-item.disabled .page-link {
+    border-color: transparent;
+    background-color: #f9fafe;
+    color: rgba(255, 255, 255, 0.7) !important;
+    opacity: .6; 
+}
+.n-p .page-link {
+    background-color: #232931 !important;
+}
+.page-link {
+    border-color: transparent;
+    background-color: #f9fafe;
+    font-weight: 600; 
+}
+.page-link:hover {
+    background-color: #4ecca2bd;
+    color: #fff;
+    border-color: transparent; 
+}
+.page-link:focus {
+    box-shadow: none; 
+}
+
+
