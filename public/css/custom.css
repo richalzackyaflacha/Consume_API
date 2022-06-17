@@ -1,19 +1,35 @@
 /* Body */
 #app {
-    background-color: #393E46;
+    background-color: #44000D;
     padding-top: 30px;
     padding-bottom: 30px;
     min-height: 100vh;
 }
 
-/* Header */
+/* Card */
+.card {
+    border-radius: 10px !important;
+    border: none;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.6);
+    background-color: #F9D276;
+}
 .card-header {
-    background-color: #4ECCA3;
+    background-color: #83142C;
+    border-top-left-radius: 10px !important;
+    border-top-right-radius: 10px !important;
+}
+.card-body {
+    background-color: #F9D276 !important;
+    border-radius: 10px !important;
 }
 
 /* Button */
 .btn {
     transition: .4s;
+    border: none !important;
+    outline: none;
+    border-radius: 10px;
+    font-weight: 600;
 }
 .btn:hover {
     transform: scale(1.03);
@@ -23,20 +39,50 @@
     font-weight: bold;
     letter-spacing: .1em;
 }
-table th, .btn-success {
-    background-color: #4ECCA3 !important;
-    color: black !important;
+table th, .btn-edit, .btn-success {
+    background-color: #83142C !important;
+    color:  #F9D276 !important;
+    outline: none;
+}
+.btn-edit:active {
+    outline: 5px solid rgba(68, 0, 12, 0.5);
+}
+.btn-success {
+    border: 2px solid #83142C !important;
 }
 .btn-info {
-    background-color: rgb(100, 100, 100) !important;
-    color: white !important;
-    border: 1px solid #4ECCA3 !important;
+    background-color: transparent !important;
+    color: #83142C !important;
+    border: 2px solid #83142C !important;
+}
+.btn-create {
+    background-color: #AD1D45 !important;
+    color: #F9D276;
+    font-weight: 600;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.btn-create:hover {
+    color: #F9D276 !important;
+}
+.btn-create:active {
+    outline: 10px solid rgba(249, 210, 118, 0.5) !important;
 }
 
 /* Table */
 table td {
     font-weight: 600 !important;
     border: none !important;
+}
+table th {
+    border: none;
+}
+table .th-left {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+table .th-right {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 /* Pagination */

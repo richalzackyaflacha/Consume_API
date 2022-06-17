@@ -1,7 +1,7 @@
 <x-layouts.app>
     <div class="card">
         <div class="card-header d-flex justify-content-between">
-            <a class="btn btn-secondary text-light" href="{{ route('users.create') }}">New User</a>
+            <a class="btn btn-create" href="{{ route('users.create') }}">New User</a>
         </div>
 
         <div class="card-body">
@@ -15,10 +15,10 @@
                 <div class="table-responsive">
                     <table class="table table-striped text-center">
                         <tr>
-                            <th width="50px">No</th>
+                            <th width="50px" class="th-left">No</th>
                             <th>First Name</th>
                             <th>Last Name</th>
-                            <th width="150px">Action</th>
+                            <th width="150px" class="th-right">Action</th>
                         </tr>
                         @forelse ($users['data'] as $user)
                             <tr>
@@ -26,7 +26,7 @@
                                 <td>{{ $user['firstName'] }}</td>
                                 <td>{{ $user['lastName'] }}</td>
                                 <td>
-                                    <a href="{{ route('users.edit', $user['id']) }}" class="btn btn-success" title="Edit"><i class="fa-solid fa-user-pen"></i></a>
+                                    <a href="{{ route('users.edit', $user['id']) }}" class="btn btn-edit" title="Edit"><i class="fa-solid fa-user-pen"></i></a>
                                     <form class="d-inline-block" action="{{ route('users.destroy', $user['id']) }}" method="POST" onsubmit="return confirm('Are you sure to delete this user?');">
                                         @csrf
                                         @method('DELETE')

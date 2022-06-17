@@ -14,7 +14,6 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
 
         <!-- Template CSS -->
-        {{-- <link rel="stylesheet" href="/css/style.css"> --}}
         <link rel="stylesheet" href="/css/components.css">
         <link rel="stylesheet" href="/css/custom.css">
     </head>
